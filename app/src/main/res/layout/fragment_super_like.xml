@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="SuperLikeFragment"
+            type="com.tinderbusiness.fragments.SuperLikeFragment" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        tools:context=".fragments.SuperLikeFragment"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/super_like_feature"
+            android:textAllCaps="true"
+            android:textColor="@color/txt_grey"
+            android:theme="@style/FontSizeLarge"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="This is Super Like Feature\nThis is Like Feature"
+            android:textColor="@color/txt_grey"
+            android:theme="@style/FontSizeMedium"/>
+
+        <LinearLayout
+            android:id="@+id/lyt_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txvMembership"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:id="@+id/txv3Likes"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="5 Likes"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="@color/txt_menu_text"
+                android:theme="@style/FontSizeMedium"
+                android:background="@drawable/round_card_orange"/>
+
+            <TextView
+                android:id="@+id/txv10Likes"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginStart="6dp"
+                android:theme="@style/FontSizeMedium"
+                android:text="10 Likes"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="@color/txt_menu_text"
+                android:background="@drawable/round_card_grey"/>
+
+            <TextView
+                android:id="@+id/txv20Likes"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginStart="6dp"
+                android:theme="@style/FontSizeMedium"
+                android:text="20 Likes"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/txt_menu_text"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_card_yellow"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lytPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+
+            <RelativeLayout
+                android:id="@+id/rlt5Likes"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="120dp"
+                android:background="@drawable/selector_orange_card"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/txv5Price"
+                    android:layout_centerHorizontal="true"
+                    android:text="USD"
+                    android:textAllCaps="true"
+                    android:textColor="@color/txt_menu_text"
+                    android:theme="@style/FontSizeLarge"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txv5Price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="5.99"
+                    android:textAllCaps="true"
+                    android:textColor="@color/txt_grey"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txv5Price"
+                    android:layout_centerHorizontal="true"
+                    android:text="each"
+                    android:textColor="@color/txt_grey"
+                    android:theme="@style/FontSizeMedium"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlt10Likes"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="120dp"
+                android:background="@drawable/selector_grey_card"
+                android:layout_marginStart="6dp"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/txv4Price"
+                    android:layout_centerHorizontal="true"
+                    android:text="USD"
+                    android:textAllCaps="true"
+                    android:textColor="@color/txt_menu_text"
+                    android:theme="@style/FontSizeLarge"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txv4Price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="4.99"
+                    android:textAllCaps="true"
+                    android:textColor="@color/txt_grey"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txv4Price"
+                    android:layout_centerHorizontal="true"
+                    android:text="each"
+                    android:textColor="@color/txt_grey"
+                    android:theme="@style/FontSizeMedium"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlt20Likes"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="120dp"
+                android:background="@drawable/stroke_grey"
+                android:layout_marginStart="6dp"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/txv2Price"
+                    android:layout_centerHorizontal="true"
+                    android:text="USD"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/txt_menu_text"
+                    android:theme="@style/FontSizeLarge"/>
+
+                <TextView
+                    android:id="@+id/txv2Price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="2.99"
+                    android:textAllCaps="true"
+                    android:textColor="@color/txt_grey"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txv2Price"
+                    android:layout_centerHorizontal="true"
+                    android:text="each"
+                    android:textColor="@color/txt_grey"
+                    android:theme="@style/FontSizeMedium"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnMakePayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="30dp"
+            android:text="Make Payment"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:theme="@style/FontSizeLarge"
+            android:background="@drawable/button_green"/>
+
+    </LinearLayout>
+
+</layout>

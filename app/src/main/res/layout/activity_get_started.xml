@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="GetStartedActivity"
+            type="com.tinderbusiness.activities.GetStartedActivity" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp"
+        tools:context=".activities.GetStartedActivity"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/avatar" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/businesstinderlogo" />
+
+        <TextView
+            android:id="@+id/txvRegistration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:layout_centerHorizontal="true"
+            android:text="GET STARTED"
+            android:textAllCaps="true"
+            android:textColor="@color/txt_grey"
+            android:theme="@style/FontSizeLarge"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/lytIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="45dp"
+            android:layout_below="@+id/txvRegistration"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/lytRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/white_circle"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/txt_grey"
+                    android:text="register"
+                    android:theme="@style/FontSizeMedium"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:layout_marginTop="9dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:background="@color/txt_grey"/>
+
+            <LinearLayout
+                android:id="@+id/lytCreate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/white_circle"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/txt_grey"
+                    android:theme="@style/FontSizeMedium"
+                    android:text="create"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:layout_marginTop="9dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:background="@color/txt_grey"/>
+
+            <LinearLayout
+                android:id="@+id/lytstart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/red_circle"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:theme="@style/FontSizeMedium"
+                    android:textColor="@color/txt_grey"
+                    android:text="start"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/lytIndicator"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/FontSizeLarge"
+                android:textStyle="bold"
+                android:textColor="@color/txt_grey"
+                android:text="Great Job!"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:theme="@style/FontSizeMedium"
+                android:textColor="@color/txt_grey"
+                android:text="Account and Profile Created Successfully \nLearn to use the App in less than 2 minutes"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/stroke_grey">
+
+                <com.afdhal_fa.imageslider.ImageSlider
+                    android:id="@+id/imageSlide"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:iss_auto_cycle="true"
+                    app:iss_delay="0"
+                    app:iss_period="1000"
+                    app:iss_title_color="@color/txt_grey"
+                    app:iss_with_background="false"
+                    app:iss_selected_dot="@drawable/indicator_active"
+                    app:iss_unselected_dot="@drawable/indicator_inactive"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnHomepage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/button_dark_green"
+                android:text="Homepage"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:theme="@style/FontSizeLarge"
+                android:visibility="visible" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

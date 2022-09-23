@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="SettingActivity"
+            type="com.tinderbusiness.activities.tabs.SettingActivity" />
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".activities.tabs.SettingActivity"
+            android:orientation="vertical"
+
+            android:paddingTop="8dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp">
+
+            <include
+                android:id="@+id/headerSetting"
+                layout="@layout/header"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Edit Setting"
+                android:textAllCaps="true"
+                android:theme="@style/FontSizeMedium"
+                android:textStyle="bold"
+                android:textColor="@color/txt_grey"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:text="Notifications"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:theme="@style/FontSizeMedium"
+                android:drawableStart="@drawable/nofification"
+                android:textColor="@color/txt_menu_text"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/txvEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textColor="@color/txt_grey"
+                    android:theme="@style/FontSizeMedium"/>
+
+                <ImageView
+                    android:id="@+id/imvEmailDown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/dropdown"
+                    android:visibility="visible"/>
+
+                <ImageView
+                    android:id="@+id/imvEmailCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/closeicon"
+                    android:visibility="gone" />
+
+                <View
+                    android:id="@+id/emailV"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/txvEmail"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/txt_grey"/>
+
+                <RelativeLayout
+                    android:id="@+id/rltEmailHide"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/emailV"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switchMatches"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="New Matches"
+                        android:theme="@style/FontSizeMedium"
+                        app:switchPadding="56dp" />
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switchMessages"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/switchMatches"
+                        android:layout_marginTop="8dp"
+                        android:padding="8dp"
+                        android:text="New Messages"
+                        android:theme="@style/FontSizeMedium"
+                        app:switchPadding="46dp" />
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switchPromotions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/switchMessages"
+                        android:layout_marginTop="8dp"
+                        android:padding="8dp"
+                        app:switchPadding="68dp"
+                        android:theme="@style/FontSizeMedium"
+                        android:text="Promotions"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/txvPush"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Push Notifications"
+                    android:textColor="@color/txt_grey"
+                    android:theme="@style/FontSizeMedium" />
+
+                <ImageView
+                    android:id="@+id/imvNotiDown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/dropdown"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/imvNotiCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/closeicon"
+                    android:visibility="gone"/>
+
+                <View
+                    android:id="@+id/NotiV"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/txvPush"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/txt_grey" />
+
+                <RelativeLayout
+                    android:id="@+id/rltNotiHide"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/NotiV"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switchNotiMatches"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="New Matches"
+                        android:theme="@style/FontSizeMedium"
+                        android:textColor="@color/txt_grey"
+                        app:switchPadding="56dp" />
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switchNotiMessages"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/switchNotiMatches"
+                        android:layout_marginTop="8dp"
+                        android:padding="8dp"
+                        android:text="New Messages"
+                        android:textColor="@color/txt_grey"
+                        android:theme="@style/FontSizeMedium"
+                        app:switchPadding="46dp" />
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switchNotiPromotions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/switchNotiMessages"
+                        android:layout_marginTop="8dp"
+                        android:padding="8dp"
+                        android:textColor="@color/txt_grey"
+                        android:text="Promotions"
+                        android:theme="@style/FontSizeMedium"
+                        app:switchPadding="68dp" />
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switchNotiLikes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/switchNotiPromotions"
+                        android:layout_marginTop="8dp"
+                        android:padding="8dp"
+                        android:textColor="@color/txt_grey"
+                        android:text="Message Likes"
+                        android:theme="@style/FontSizeMedium"
+                        app:switchPadding="48dp" />
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switchNotiSuperLikes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/switchNotiLikes"
+                        android:layout_marginTop="8dp"
+                        android:padding="8dp"
+                        android:textColor="@color/txt_grey"
+                        android:text="Super Likes"
+                        android:theme="@style/FontSizeMedium"
+                        app:switchPadding="68dp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/txvPass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:textColor="@color/txt_grey"
+                    android:theme="@style/FontSizeMedium" />
+
+                <ImageView
+                    android:id="@+id/imvPassDown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/dropdown"
+                    android:visibility="visible"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/imvPassCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/closeicon"
+                    android:visibility="gone"/>
+
+                <View
+                    android:id="@+id/PassV"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/txvPass"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/txt_grey" />
+
+                <RelativeLayout
+                    android:id="@+id/rltPassHide"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/PassV"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/txpNew"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:endIconMode="password_toggle"
+                        app:endIconDrawable="@drawable/customer_password_eye"
+                        app:endIconTint="@color/colorPrimary"
+                        app:hintEnabled="false">
+
+                        <EditText
+                            android:id="@+id/edtNewPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:hint="New Password"
+                            android:singleLine="true"
+                            android:theme="@style/FontSizeMedium"
+                            android:paddingStart="20dp"
+                            android:paddingEnd="20dp"
+                            android:paddingTop="12dp"
+                            android:paddingBottom="12dp"
+                            android:textColorHint="@color/txt_grey"
+                            android:background="@drawable/stroke_grey"
+                            android:inputType="textPassword"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/txpConfirm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:endIconMode="password_toggle"
+                        app:endIconDrawable="@drawable/customer_password_eye"
+                        app:endIconTint="@color/colorPrimary"
+                        app:hintEnabled="false"
+                        android:layout_marginTop="8dp"
+                        android:layout_below="@+id/txpNew">
+
+                        <EditText
+                            android:id="@+id/edtConfirmPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:hint="Confirm Password"
+                            android:singleLine="true"
+                            android:theme="@style/FontSizeMedium"
+                            android:paddingStart="20dp"
+                            android:paddingEnd="20dp"
+                            android:paddingTop="12dp"
+                            android:paddingBottom="12dp"
+                            android:textColorHint="@color/txt_grey"
+                            android:background="@drawable/stroke_grey"
+                            android:inputType="textPassword"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/btnSubmit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txpConfirm"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:background="@drawable/button_green"
+                        android:text="Submit"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:theme="@style/FontSizeLarge"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txvLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="16dp"
+                android:padding="8dp"
+                android:gravity="center"
+                android:text="Log out"
+                android:textColor="@color/txt_menu_text"
+                android:background="@drawable/stroke_grey"
+                android:theme="@style/FontSizeLarge"/>
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</layout>

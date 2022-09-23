@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="18dp"
+        android:padding="24dp"
+        android:paddingBottom="16dp"
+        android:background="@drawable/stroke_grey">
+
+        <ImageView
+            android:id="@+id/imvCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_close"/>
+
+        <CheckBox
+            android:id="@+id/checkInter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/international"
+            android:textAllCaps="true"
+            android:button="@drawable/selector_checkbox"
+            android:padding="8dp"
+            android:theme="@style/FontSizeMedium"/>
+
+        <CheckBox
+            android:id="@+id/checkLocal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Local"
+            android:textAllCaps="true"
+            android:layout_marginTop="12dp"
+            android:button="@drawable/selector_checkbox"
+            android:padding="8dp"
+            android:theme="@style/FontSizeMedium"/>
+
+        <CheckBox
+            android:id="@+id/checkAsia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Asia"
+            android:textAllCaps="true"
+            android:layout_marginTop="12dp"
+            android:theme="@style/FontSizeMedium"
+            android:button="@drawable/selector_checkbox"
+            android:padding="8dp"/>
+
+        <CheckBox
+            android:id="@+id/checkAfrica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Africa"
+            android:textAllCaps="true"
+            android:layout_marginTop="12dp"
+            android:theme="@style/FontSizeMedium"
+            android:button="@drawable/selector_checkbox"
+            android:padding="8dp"/>
+
+        <CheckBox
+            android:id="@+id/checkEurope"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Europe"
+            android:textAllCaps="true"
+            android:layout_marginTop="12dp"
+            android:theme="@style/FontSizeMedium"
+            android:button="@drawable/selector_checkbox"
+            android:padding="8dp"/>
+
+        <CheckBox
+            android:id="@+id/checkNAmerica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="North America"
+            android:textAllCaps="true"
+            android:layout_marginTop="12dp"
+            android:theme="@style/FontSizeMedium"
+            android:button="@drawable/selector_checkbox"
+            android:padding="8dp"/>
+
+        <CheckBox
+            android:id="@+id/checkSAmerica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="South America"
+            android:textAllCaps="true"
+            android:layout_marginTop="12dp"
+            android:theme="@style/FontSizeMedium"
+            android:button="@drawable/selector_checkbox"
+            android:padding="8dp"/>
+
+        <CheckBox
+            android:id="@+id/checkAntartica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Antarctica"
+            android:textAllCaps="true"
+            android:layout_marginTop="12dp"
+            android:theme="@style/FontSizeMedium"
+            android:button="@drawable/selector_checkbox"
+            android:padding="8dp"/>
+
+        <!--android:text="ANTARTICA"-->
+
+        <CheckBox
+            android:id="@+id/checkOceana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ocenania"
+            android:theme="@style/FontSizeMedium"
+            android:textAllCaps="true"
+            android:layout_marginTop="12dp"
+            android:button="@drawable/selector_checkbox"
+            android:padding="8dp"/>
+
+        <Button
+            android:id="@+id/btnSelect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="select"
+            android:textColor="@color/white"
+            android:theme="@style/FontSizeLarge"
+            android:background="@drawable/button_green" />
+    </LinearLayout>
+
+</LinearLayout>

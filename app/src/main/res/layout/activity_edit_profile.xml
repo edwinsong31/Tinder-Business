@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.EditProfileActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:fillViewport="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <ImageView
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/avatar"/>
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/businesstinderlogo" />
+
+            <TextView
+                android:id="@+id/txvRegistration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo"
+                android:layout_centerHorizontal="true"
+                android:text="Edit Profile"
+                android:textAllCaps="true"
+                android:textColor="@color/txt_grey"
+                android:theme="@style/FontSizeLarge"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/txvRegistration"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contact_name"
+                    android:textColor="@color/txt_grey"
+                    android:theme="@style/FontSizeMedium" />
+
+                <EditText
+                    android:id="@+id/edtContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/stroke_grey"
+                    android:paddingStart="20dp"
+                    android:paddingTop="12dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="12dp"
+                    android:singleLine="true"
+                    android:text="Contact Name"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/txt_grey"
+                    android:theme="@style/FontSizeMedium" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/email_address"
+                    android:textColor="@color/txt_grey"
+                    android:theme="@style/FontSizeMedium" />
+
+                <TextView
+                    android:id="@+id/edtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/stroke_grey"
+                    android:importantForAutofill="no"
+                    android:paddingStart="20dp"
+                    android:paddingTop="12dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="12dp"
+                    android:singleLine="true"
+                    android:text="Email Address *"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/txt_grey"
+                    android:theme="@style/FontSizeMedium" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/country"
+                    android:textColor="@color/txt_grey"
+                    android:theme="@style/FontSizeMedium" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/stroke_grey">
+
+                    <com.hbb20.CountryPickerView
+                        android:id="@+id/ccp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:theme="@style/FontSizeMedium"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/txvCountry"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:hint="Country *"
+                        android:paddingStart="20dp"
+                        android:paddingTop="12dp"
+                        android:paddingEnd="20dp"
+                        android:paddingBottom="12dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/txt_grey"
+                        android:theme="@style/FontSizeMedium"
+                        android:visibility="visible"
+                        app:drawableEndCompat="@drawable/ic_arrow_down" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/industry"
+                    android:textColor="@color/txt_grey"
+                    android:theme="@style/FontSizeMedium" />
+
+                <TextView
+                    android:id="@+id/txvIndustry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/stroke_grey"
+                    android:gravity="center_vertical"
+                    android:paddingStart="20dp"
+                    android:paddingTop="9dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="9dp"
+                    android:singleLine="true"
+                    android:text="Industry *"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/txt_grey"
+                    android:theme="@style/FontSizeMedium"
+                    app:drawableEndCompat="@drawable/ic_arrow_down" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/interested_industry"
+                    android:textColor="@color/txt_grey"
+                    android:theme="@style/FontSizeMedium" />
+
+                <TextView
+                    android:id="@+id/txvInterestedIndustry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/stroke_grey"
+                    android:gravity="center_vertical"
+                    android:paddingStart="20dp"
+                    android:paddingTop="9dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="9dp"
+                    android:singleLine="true"
+                    android:text="Interested Industry *"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/txt_grey"
+                    android:theme="@style/FontSizeMedium"
+                    app:drawableEndCompat="@drawable/ic_arrow_down" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/types_collaborations"
+                    android:textColor="@color/txt_grey"
+                    android:theme="@style/FontSizeMedium" />
+
+                <TextView
+                    android:id="@+id/txvCollaborations"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/stroke_grey"
+                    android:gravity="center_vertical"
+                    android:paddingStart="20dp"
+                    android:paddingTop="9dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="9dp"
+                    android:singleLine="true"
+                    android:text="Types of Collaborations *"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/txt_grey"
+                    android:theme="@style/FontSizeMedium"
+                    app:drawableEndCompat="@drawable/ic_arrow_down" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edtBudget"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/stroke_grey"
+                        android:hint="Budget (USD) *"
+                        android:paddingStart="20dp"
+                        android:paddingTop="12dp"
+                        android:paddingEnd="4dp"
+                        android:paddingBottom="12dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/txt_grey"
+                        android:inputType="number"
+                        android:theme="@style/FontSizeMedium" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="12dp">
+
+                        <TextView
+                            android:id="@+id/txvMin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="oK"
+                            android:textColor="@color/txt_grey"
+                            android:theme="@style/FontSizeSmall" />
+
+                        <TextView
+                            android:id="@+id/txvMax"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="8dp"
+                            android:text="100K"
+                            android:textColor="@color/txt_grey"
+                            android:theme="@style/FontSizeSmall" />
+
+                        <SeekBar
+                            android:id="@+id/seekBudget"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:max="100"
+                            android:progress="0"
+                            android:thumb="@drawable/thumb_image" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/description"
+                    android:textColor="@color/txt_grey"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/edtDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/stroke_grey"
+                    android:gravity="top|left"
+                    android:lines="8"
+                    android:maxLines="8"
+                    android:paddingStart="20dp"
+                    android:paddingTop="8dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="8dp"
+                    android:hint="Description (Optional)\nLimit to 150 words only"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/txt_grey"
+                    android:textSize="14sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <LinearLayout
+                    android:id="@+id/lytColorPicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <com.github.dhaval2404.colorpicker.ColorPickerView
+                        android:id="@+id/colorPicker"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/background_color"
+                    android:textColor="@color/txt_grey"
+                    android:theme="@style/FontSizeMedium" />
+
+                <TextView
+                    android:id="@+id/txvBgColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/stroke_grey"
+                    android:paddingStart="20dp"
+                    android:paddingTop="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="12dp"
+                    android:singleLine="true"
+                    android:text="Background Color : #E7FA5C"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/txt_grey"
+                    android:theme="@style/FontSizeMedium" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/text_color"
+                    android:textColor="@color/txt_grey"
+                    android:theme="@style/FontSizeMedium" />
+
+                <TextView
+                    android:id="@+id/txvTxtColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/stroke_grey"
+                    android:paddingStart="20dp"
+                    android:paddingTop="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="12dp"
+                    android:singleLine="true"
+                    android:text="Text Color : #BA4343"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/txt_grey"
+                    android:theme="@style/FontSizeMedium" />
+
+                <Button
+                    android:id="@+id/btnOk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36dp"
+                    android:background="@drawable/button_dark_green"
+                    android:text="Ok"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:theme="@style/FontSizeLarge" />
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/button_green"
+                    android:text="Cancel"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:theme="@style/FontSizeLarge" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+    
+
+</layout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/drawable-anydpi/ic_return.xml" value="0.2805" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/drawable/button_dark_green.xml" value="0.234" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/drawable/button_green.xml" value="0.234" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/drawable/circle_green.xml" value="0.2805" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/drawable/deselect.xml" value="0.2185" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/drawable/gradation_black.xml" value="0.2205" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/drawable/green_button.xml" value="0.3005" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/drawable/indicator_active.xml" value="0.237" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/drawable/indicator_inactive.xml" value="0.237" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/drawable/mo_19_round.xml" value="0.339" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/drawable/mo_24_round.xml" value="0.339" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/drawable/mo_29.xml" value="0.339" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/drawable/mo_29_round.xml" value="0.2035" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/drawable/overlay_black.xml" value="0.225" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/drawable/progress.xml" value="0.33" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/drawable/red_circle.xml" value="0.234" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/drawable/round_card_orange.xml" value="0.225" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/drawable/round_card_yellow.xml" value="0.2375" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/drawable/round_chat_grey.xml" value="0.2375" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/drawable/round_chat_now.xml" value="0.225" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/drawable/round_chat_yellow.xml" value="0.225" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/drawable/select.xml" value="0.2185" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/drawable/selector_checkbox.xml" value="0.2185" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/drawable/selector_grey_card.xml" value="0.201" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/drawable/selector_orange_card.xml" value="0.201" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/drawable/selector_yellow_card.xml" value="0.201" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/drawable/skip_white_120dp.xml" value="0.2405" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/drawable/stroke_grey.xml" value="0.3005" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/drawable/stroke_menu.xml" value="0.2395" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/drawable/thumb_image.xml" value="0.2805" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/drawable/tutorial_round.xml" value="0.1815" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/drawable/white_circle.xml" value="0.234" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/layout/activity_boost.xml" value="0.36666666666666664" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/layout/activity_chat.xml" value="0.36666666666666664" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/layout/activity_chat_list.xml" value="0.36666666666666664" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/layout/activity_confirm_color.xml" value="0.36666666666666664" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/layout/activity_edit_profile.xml" value="0.33" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/layout/activity_forget_password.xml" value="0.2890625" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/layout/activity_general_context.xml" value="0.36666666666666664" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/layout/activity_get_started.xml" value="0.33177083333333335" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/layout/activity_home.xml" value="0.365625" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/layout/activity_home_extend.xml" value="0.36666666666666664" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/layout/activity_log_in.xml" value="0.33" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/layout/activity_main.xml" value="0.365625" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/layout/activity_menu.xml" value="0.365625" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/layout/activity_register1.xml" value="0.33" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/layout/activity_register2.xml" value="0.33" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/layout/activity_setting.xml" value="0.36666666666666664" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/layout/activity_splash.xml" value="0.36666666666666664" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/layout/custom_progress.xml" value="0.36666666666666664" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/layout/dialog_chat_now.xml" value="0.365625" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/layout/dialog_international.xml" value="0.36666666666666664" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/layout/dialog_match.xml" value="0.365625" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/layout/fragment_boost.xml" value="0.36666666666666664" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/layout/fragment_membership_packages.xml" value="0.36666666666666664" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/layout/fragment_super_like.xml" value="0.36666666666666664" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/layout/fragment_super_likening.xml" value="0.33" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/layout/header.xml" value="0.3645833333333333" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/layout/item_boost.xml" value="0.36666666666666664" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/layout/item_boost_feature.xml" value="0.315625" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/layout/item_card.xml" value="0.365625" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/layout/item_chat.xml" value="0.365625" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/layout/item_chat_user.xml" value="0.365625" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/layout/item_membership_packages.xml" value="0.3145833333333333" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/layout/item_sample_image_slider.xml" value="0.365625" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/layout/item_super_like.xml" value="0.3145833333333333" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/layout/item_super_likening.xml" value="0.3145833333333333" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/layout/item_tutorial_slider.xml" value="0.36666666666666664" />
+        <entry key="..\:/2016_Working/2022/7 month/7_30 Tinder Business/Tinder Business/app/src/main/res/layout/tablayout.xml" value="0.3645833333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="SuppressKotlinCodeStyleNotification">
+    <option name="disableForAll" value="true" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.22" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

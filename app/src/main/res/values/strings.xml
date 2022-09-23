@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Tinder Business</string>
+
+    <string name="str_back_one_more_end">Pressing once more will be terminated.</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="please_wait">Please wait…</string>
+    <string name="enter_user_name">Please enter username.</string>
+    <string name="enter_password">Please Enter password.</string>
+    <string name="enter_pass_match">Password did not match.</string>
+    <string name="enter_contact_name">Please Enter contact name.</string>
+    <string name="enter_email">Please Enter email address.</string>
+    <string name="password_6">Password should be at least 6 characters.</string>
+    <string name="confirm_password">Please confirm password.</string>
+    <string name="select_country">Please select country.</string>
+    <string name="select_industry">Please select industry.</string>
+    <string name="enter_valid_email">Enter valid email.</string>
+    <string name="international">International</string>
+    <string name="local">Local</string>
+    <string name="select_collaborations">Please select collaboration</string>
+    <string name="select_interested_industry">Please select interested industry</string>
+    <string name="enter_budget">Please enter budget</string>
+    <string name="enter_description">Please enter description</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="go_premium">Go Premium</string>
+    <string name="current_location">Current Location</string>
+    <string name="advertise">Advertise With Us</string>
+    <string name="receipt_archieve">Receipt Archieve</string>
+    <string name="legal">Legal</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="membership_packages">Membership Packages</string>
+    <string name="mo_19"><b>USD19.99/mo</b>\n3 Profiles\n1 Month\n30Likes/day\nUndo Feature</string>
+    <string name="mo_24"><b>USD24.99/mo</b>\n5 Profiles\n3 Months\n50Likes/day\nUndo Feature\n1 Free\nAdditional\nSuper Like\nper day</string>
+    <string name="mo_29"><b>USD29.99/mo</b>\n5 Profiles\n6 Months\nUnlimited/day\nUndo Feature\n2 Free\nAdditional\nSuper Like\nper day\nLighting\nFeature/Week</string>
+    <string name="license">Licenses</string>
+    <string name="privacy_preferences">Privacy Preferences</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_service">Terms of Services</string>
+    <string name="membership_bronze">3 Profiles\n1 Month\n30 Likes /day\nUndo Feature</string>
+    <string name="membership_silver">5 Profiles\n3 Months\n50Likes/day\nUndo Feature\n<b>1 Free\nAdditional\nSuper Like\nper day</b></string>
+    <string name="membership_gold">5 Profiles\n6 Months\nUnlimited/day\nUndo Feature\n<b>2 Free\nAdditional\nSuper Like\nper day\n1 Lighting\nFeature/Week</b></string>
+    <string name="boost_feature">Boost Feature</string>
+    <string name="super_like_feature">Super Like Feature</string>
+    <string name="super_likening_feature">Super Likening Feature</string>
+    <string name="contact_name">Contact Name :</string>
+    <string name="email_address">Email Address :</string>
+    <string name="country">Country :</string>
+    <string name="industry">Industry :</string>
+    <string name="interested_industry">Interested Industry :</string>
+    <string name="types_collaborations">Types of Collaborations :</string>
+    <string name="description">Description (Optional) :</string>
+    <string name="background_color">Background Color :</string>
+    <string name="text_color">Text Color :</string>
+
+    //industry
+    <string-array name="industry_array">
+        <item>Accommodation Food Services</item>
+        <item>Agriculture, Forestry, Fishing and Hunting</item>
+        <item>Arts, Entertainment and Recreation</item>
+        <item>Finance and Insurance</item>
+        <item>Healthcare and Social Assistance</item>
+    </string-array>
+
+    <string-array name="types_collaborations_array">
+        <item>Loyalty Program</item>
+        <item>Influencers Collaboration</item>
+        <item>Affiliation</item>
+        <item>Charitable Programs</item>
+        <item>Sponsorships</item>
+        <item>Joint Products</item>
+        <item>Content Partnership</item>
+        <item>Product Placement</item>
+        <item>Others</item>
+    </string-array>
+
+    <string name="general">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quibus natura iure responderit non esse verum aliunde finem beate vivendi, a se principia rei gerendae peti; Quae enim adhuc protulisti,
+        popularia sunt, ego autem a te elegantiora desidero. Duo Reges: constructio</string>
+</resources>

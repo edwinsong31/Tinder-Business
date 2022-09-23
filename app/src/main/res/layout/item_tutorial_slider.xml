@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <data>
+        <variable
+            name="ItemSampleImageSlider"
+            type="com.tinderbusiness.adapter.SliderCustomerAdapter" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp"
+        android:background="@drawable/stroke_grey">
+
+        <TextView
+            android:id="@+id/txvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="How to use the app"
+            android:textColor="@color/txt_grey"
+            android:theme="@style/FontSizeLarge"/>
+
+        <TextView
+            android:id="@+id/txvDes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="You can use this app"
+            android:textColor="@color/txt_grey"
+            android:theme="@style/FontSizeMedium"/>
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="HomeActivity"
+            type="com.tinderbusiness.activities.tabs.HomeActivity" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.tabs.HomeActivity"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/header"/>
+
+        <RelativeLayout
+            android:id="@+id/rltCard"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipChildren="false">
+
+            <RelativeLayout
+                android:id="@+id/button_container"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                android:clipChildren="false"
+                android:orientation="horizontal">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/rewind_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toStartOf="@+id/skip_button"
+                    android:src="@drawable/ic_return"
+                    app:backgroundTint="@android:color/white"
+                    app:fabSize="mini"
+                    app:maxImageSize="36dp"
+                    app:rippleColor="#22ED7563"
+                    tools:ignore="ContentDescription,RelativeOverlap" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/skip_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toStartOf="@+id/super_like_button"
+                    android:src="@mipmap/ic_close"
+                    app:backgroundTint="@android:color/white"
+                    app:fabSize="auto"
+                    app:maxImageSize="48dp"
+                    app:rippleColor="#22ED7563"
+                    tools:ignore="ContentDescription,RelativeOverlap" />
+
+                <!--<ImageView
+                    android:id="@+id/skip_button"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_toStartOf="@+id/super_like_button"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:focusable="true"
+                    android:src="@mipmap/ic_close"
+                    app:backgroundTint="@android:color/white"
+                    tools:ignore="ContentDescription,RelativeOverlap" />-->
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/super_like_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@mipmap/ic_super_like"
+                    app:backgroundTint="@android:color/white"
+                    app:fabSize="auto"
+                    app:maxImageSize="48dp"
+                    app:rippleColor="#22ED7563"
+                    tools:ignore="ContentDescription,RelativeOverlap"/>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/like_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toEndOf="@+id/super_like_button"
+                    android:src="@mipmap/ic_like"
+                    app:backgroundTint="@android:color/white"
+                    android:focusable="true"
+                    app:fabSize="auto"
+                    app:maxImageSize="48dp"
+                    app:rippleColor="#22ED7563"
+                    tools:ignore="ContentDescription,RelativeOverlap"/>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/lightning_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toEndOf="@+id/like_button"
+                    android:focusable="true"
+                    android:src="@drawable/ic_lightning"
+                    app:backgroundTint="@android:color/white"
+                    app:fabSize="mini"
+                    app:maxImageSize="36dp"
+                    app:rippleColor="#22ED7563"
+                    tools:ignore="ContentDescription,RelativeOverlap" />
+
+            </RelativeLayout>
+
+            <com.yuyakaido.android.cardstackview.CardStackView
+                android:id="@+id/card_stack_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/button_container"
+                android:clipToPadding="false"
+                android:padding="4dp" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/tab"
+            layout="@layout/tablayout"/>
+
+    </LinearLayout>
+
+</layout>

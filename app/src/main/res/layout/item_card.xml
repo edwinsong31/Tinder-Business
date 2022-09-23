@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/selectableItemBackground"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardUseCompatPadding="true"
+    app:cardPreventCornerOverlap="false"
+    app:cardCornerRadius="8dp"
+    app:cardBackgroundColor="@android:color/white">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/item_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="8dp"
+        android:visibility="gone"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/lytCard"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:gravity="center"
+                >
+                <!--android:background="@drawable/gradation_black"
+                android:background="@color/light_yellow"-->
+
+                <TextView
+                    android:id="@+id/item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Michael Jackson"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/txt_dark_red"
+                    android:textSize="22sp"/>
+
+                <TextView
+                    android:id="@+id/item_industry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textStyle="bold"
+                    android:text="manufacturing"
+                    android:textAllCaps="true"
+                    android:textColor="@color/txt_dark_red"
+                    android:theme="@style/FontSizeSmall"/>
+
+                <TextView
+                    android:id="@+id/item_country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textStyle="bold"
+                    android:text="Singapore"
+                    android:textAllCaps="true"
+                    android:textColor="@color/txt_dark_red"
+                    android:theme="@style/FontSizeSmall"/>
+
+                <TextView
+                    android:id="@+id/item_international"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textStyle="bold"
+                    android:text="international"
+                    android:textAllCaps="true"
+                    android:textColor="@color/txt_dark_red"
+                    android:theme="@style/FontSizeSmall"
+                    android:visibility="visible"/>
+
+
+                <TextView
+                    android:id="@+id/item_budget"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textStyle="bold"
+                    android:text="budget : USD 300,000"
+                    android:textAllCaps="true"
+                    android:textColor="@color/txt_dark_red"
+                    android:theme="@style/FontSizeLarge"
+                    android:visibility="visible"/>
+
+                <TextView
+                    android:id="@+id/txvTypesTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textStyle="bold"
+                    android:text="type of coallaborations"
+                    android:textAllCaps="true"
+                    android:textColor="@color/txt_dark_red"
+                    android:theme="@style/FontSizeLarge"
+                    android:visibility="visible"/>
+
+                <TextView
+                    android:id="@+id/item_type_callaborations"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Loyalty Program"
+                    android:textColor="@color/txt_dark_red"
+                    android:theme="@style/FontSizeMedium"
+                    android:visibility="visible"/>
+
+                <TextView
+                    android:id="@+id/txvInterestedTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textStyle="bold"
+                    android:text="Interested industry"
+                    android:textAllCaps="true"
+                    android:textColor="@color/txt_dark_red"
+                    android:theme="@style/FontSizeLarge"
+                    android:visibility="visible"/>
+
+                <TextView
+                    android:id="@+id/item_interested_industry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Biomedical and Engineering Fluid Mechanics"
+                    android:textColor="@color/txt_dark_red"
+                    android:theme="@style/FontSizeMedium"
+                    android:visibility="visible"/>
+
+                <TextView
+                    android:id="@+id/txvDesTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textStyle="bold"
+                    android:text="DESCRIPTION"
+                    android:textAllCaps="true"
+                    android:textColor="@color/txt_dark_red"
+                    android:theme="@style/FontSizeLarge"
+                    android:visibility="visible"/>
+
+                <TextView
+                    android:id="@+id/item_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Restrict to 30 words preview"
+                    android:textColor="@color/txt_dark_red"
+                    android:theme="@style/FontSizeMedium"
+                    android:visibility="visible"/>
+
+                <TextView
+                    android:id="@+id/item_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/left_overlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/overlay_black"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/skip_white_120dp"
+                    android:layout_gravity="center"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/right_overlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/overlay_black"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/like_white_120dp"
+                    android:layout_gravity="center"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/top_overlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/bottom_overlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </FrameLayout>
+
+        </FrameLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.cardview.widget.CardView>

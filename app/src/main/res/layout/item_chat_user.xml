@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="ChatListAdapter"
+            type="com.tinderbusiness.adapter.ChatListAdapter" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/lytUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/txvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:theme="@style/FontSizeMedium"
+            android:text="Coco Lim"/>
+
+        <ImageView
+            android:id="@+id/imvSuperLike"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@mipmap/ic_super_like"
+            android:layout_marginStart="8dp"/>
+
+        <ImageView
+            android:id="@+id/imvLike"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="8dp"
+            android:src="@mipmap/ic_like"/>
+    </LinearLayout>
+
+</layout>

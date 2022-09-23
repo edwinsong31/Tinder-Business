@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="MembershipPackagesFragment"
+            type="com.tinderbusiness.fragments.MembershipPackagesFragment" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        tools:context=".fragments.MembershipPackagesFragment">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/membership_packages"
+            android:textAllCaps="true"
+            android:textColor="@color/txt_grey"
+            android:theme="@style/FontSizeLarge"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="This is Membership Package\nThis is Membership Package"
+            android:textColor="@color/txt_grey"
+            android:theme="@style/FontSizeMedium"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/round_card_orange">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Bronze"
+                    android:textStyle="bold"
+                    android:textColor="@color/txt_menu_text"
+                    android:theme="@style/FontSizeLarge"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/txt_grey"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="@string/membership_bronze"
+                    android:textColor="@color/txt_menu_text"
+                    android:theme="@style/FontSizeSmall"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="2dp"
+                android:orientation="vertical"
+                android:background="@drawable/round_card_grey">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:theme="@style/FontSizeLarge"
+                    android:text="Silver"
+                    android:textStyle="bold"
+                    android:textColor="@color/txt_menu_text"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/txt_grey"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:theme="@style/FontSizeSmall"
+                    android:text="@string/membership_silver"
+                    android:textColor="@color/txt_menu_text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="2dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:background="@drawable/round_card_yellow">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:theme="@style/FontSizeLarge"
+                    android:text="Gold"
+                    android:textStyle="bold"
+                    android:textColor="@color/txt_menu_text"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/txt_grey"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:theme="@style/FontSizeSmall"
+                    android:text="@string/membership_gold"
+                    android:textColor="@color/txt_menu_text" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lytPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+
+            <RelativeLayout
+                android:id="@+id/rltBronze"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="100dp"
+                android:background="@drawable/selector_orange_card"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/txv19Price"
+                    android:layout_centerHorizontal="true"
+                    android:text="USD"
+                    android:textAllCaps="true"
+                    android:textColor="@color/txt_menu_text"
+                    android:textStyle="bold"
+                    android:theme="@style/FontSizeLarge" />
+
+                <TextView
+                    android:id="@+id/txv19Price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="19.99"
+                    android:textAllCaps="true"
+                    android:textColor="@color/txt_grey"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txv19Price"
+                    android:layout_centerHorizontal="true"
+                    android:text="each"
+                    android:textColor="@color/txt_grey"
+                    android:theme="@style/FontSizeMedium" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rltSilver"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="100dp"
+                android:background="@drawable/selector_grey_card"
+                android:layout_marginStart="2dp"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/txv4Price"
+                    android:layout_centerHorizontal="true"
+                    android:text="USD"
+                    android:textAllCaps="true"
+                    android:textColor="@color/txt_menu_text"
+                    android:textStyle="bold"
+                    android:theme="@style/FontSizeLarge" />
+
+                <TextView
+                    android:id="@+id/txv4Price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="24.99"
+                    android:textAllCaps="true"
+                    android:textColor="@color/txt_grey"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txv4Price"
+                    android:layout_centerHorizontal="true"
+                    android:text="each"
+                    android:textColor="@color/txt_grey"
+                    android:theme="@style/FontSizeMedium"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rltGold"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="100dp"
+                android:background="@drawable/selector_yellow_card"
+                android:layout_marginStart="2dp"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/txv2Price"
+                    android:layout_centerHorizontal="true"
+                    android:text="USD"
+                    android:textAllCaps="true"
+                    android:textColor="@color/txt_menu_text"
+                    android:theme="@style/FontSizeLarge"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txv2Price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="29.99"
+                    android:textAllCaps="true"
+                    android:textColor="@color/txt_grey"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txv2Price"
+                    android:layout_centerHorizontal="true"
+                    android:text="each"
+                    android:textColor="@color/txt_grey"
+                    android:theme="@style/FontSizeMedium"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnMakePayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:text="Make Payment"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:theme="@style/FontSizeLarge"
+            android:background="@drawable/button_green"/>
+
+    </LinearLayout>
+</layout>

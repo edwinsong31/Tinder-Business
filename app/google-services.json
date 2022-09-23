@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "784598213378",
+    "project_id": "tinder-business",
+    "storage_bucket": "tinder-business.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784598213378:android:a4dd310e665dbbc208d81b",
+        "android_client_info": {
+          "package_name": "com.tinderbusiness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "784598213378-iurskvit88ao46i3j8rshqqllmtigjsf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tinderbusiness",
+            "certificate_hash": "93a7d2abfd8cd37ef48ab219fcaf36497b6c188a"
+          }
+        },
+        {
+          "client_id": "784598213378-kojvbj8n1biu6led26snsavgdofcdub0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2Bw-JLfXik9eMNNweINXbTXemhLhRX1k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "784598213378-kojvbj8n1biu6led26snsavgdofcdub0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
